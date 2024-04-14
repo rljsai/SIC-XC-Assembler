@@ -7,7 +7,7 @@ The following features are implemented in this assembler:
 2. Literals
 3. Symbol Defining Statements
 4. Control section<br>
-This project implements an assembler that supports SIC/XE instructions. The
+<P>This project implements an assembler that supports SIC/XE instructions. The
 assembler includes all the instructions. It supports Control Sections.<br>
 The instruction formats supported by SIC/XE :
 
