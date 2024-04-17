@@ -775,7 +775,7 @@ void pass1(ifstream &OPO, ofstream &intermediatefile, ofstream &errorsfile, bool
 
     string instruct, operand, label, s, CsectName = "DEFAULT";
     int line = 0;
-
+    int leela=-1;
     while (getline(OPO, s))
     {
 
@@ -871,7 +871,7 @@ void pass1(ifstream &OPO, ofstream &intermediatefile, ofstream &errorsfile, bool
             }
 
             if (instruct == "END")
-            {
+            {   leela=1;
                 intermediatefile << dec_to_hexa(CSECT[CsectName].LOCCTR) << " " << s << endl;
                 ;
                 for (auto &i : CSECT[CsectName].LIT_TAB)
@@ -1109,6 +1109,9 @@ void pass1(ifstream &OPO, ofstream &intermediatefile, ofstream &errorsfile, bool
             errorsfile << "ERROR LINE:" << line << " used " << label << " with length more than 6\n";
         }
     }
+    if(leela==-1){
+        errorsfile << "ERROR: END RECORD  NOT FOUND "<<endl;
+    }
 }
 
 void pass2(ifstream &in, ofstream &errorsfile, bool &error, ofstream &ou, ofstream &LFile)
@@ -1130,6 +1133,7 @@ void pass2(ifstream &in, ofstream &errorsfile, bool &error, ofstream &ou, ofstre
     int operand_val = 0, line = 0;
     int locctr = 0;
     int LEN = 0, ni = 0, xbpe = 0;
+    int leela=-1;
     while (getline(in, tempstr))
     {
         obj_code = "";
@@ -2136,5 +2140,8 @@ void pass2(ifstream &in, ofstream &errorsfile, bool &error, ofstream &ou, ofstre
         }
         cout << obj_code << "\n";
         LFile << obj_code << "\n";
+    }
+    if(leela==-1){
+        errorsfile << "ERROR: END RECORD  NOT FOUND "<<endl;
     }
 }
