@@ -37,15 +37,15 @@ The Addressing modes supported by the Assembler are:
   git clone https://github.com/rljsai/SIC-XC-Assembler.git
 ```
 ### contains several files each descriptions are given below
-sic-assemblermain.cpp --> To run Assembler
-sic-assembler-passes.cpp --> contains the code for PASS 1 & 2 and data structures and functions used
-input.txt --> The code for assembly is to be written into this file
-organising.txt --> contains assembly program in an organising way
-Intermediatefile.txt --> contains instructions and it’s address assigned after PASS 1
-errors.txt --> contains errors in PASS 1 &2 if any
-tables.txt --> contains symbol tables and literal tables
-listingfile.txt --> contains assembled instructions
-objectcode.txt --> contains object program
+* sic-assemblermain.cpp --> To run Assembler
+* sic-assembler-passes.cpp --> contains the code for PASS 1 & 2 and data structures and functions used
+* input.txt --> The code for assembly is to be written into this file
+* organising.txt --> contains assembly program in an organising way
+* Intermediatefile.txt --> contains instructions and it’s address assigned after PASS 1
+* errors.txt --> contains errors in PASS 1 &2 if any
+* tables.txt --> contains symbol tables and literal tables
+* listingfile.txt --> contains assembled instructions
+* objectcode.txt --> contains object program
 
 ### Input example (input.txt):
 ![Screenshot from 2024-05-06 10-48-42](https://github.com/rljsai/SIC-XC-Assembler/assets/146453283/95b9224e-5c58-4c44-9563-f89a75ff3d54)
