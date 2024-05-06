@@ -33,9 +33,9 @@ The Addressing modes supported by the Assembler are:
 
 ## Instructions to Use the Assembler:
 ### clone the repository
- ...
-   https://github.com/rljsai/SIC-XC-Assembler.git
-...
+```
+  git clone https://github.com/rljsai/SIC-XC-Assembler.git
+```
 ### contains several files each descriptions are given below
 sic-assemblermain.cpp --> To run Assembler
 sic-assembler-passes.cpp --> contains the code for PASS 1 & 2 and data structures and functions used
