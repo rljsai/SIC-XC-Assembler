@@ -31,10 +31,11 @@ The Addressing modes supported by the Assembler are:
 * The assembler creates a listing file and object program based on the assembled instructions.
 
 
-### Instructions to Use the Assembler:
-clone the repository
-[https://github.com/rljsai/SIC-XC-Assembler.git]
-
+## Instructions to Use the Assembler:
+### clone the repository
+ ...
+   https://github.com/rljsai/SIC-XC-Assembler.git
+...
 ### contains several files each descriptions are given below
 sic-assemblermain.cpp --> To run Assembler
 sic-assembler-passes.cpp --> contains the code for PASS 1 & 2 and data structures and functions used
