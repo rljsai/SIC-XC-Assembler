@@ -32,5 +32,45 @@ The Addressing modes supported by the Assembler are:
 
 
 ### Instructions to Use the Assembler:
+clone the repository
+[https://github.com/rljsai/SIC-XC-Assembler.git]
+
+### contains several files each descriptions are given below
+sic-assemblermain.cpp --> To run Assembler
+sic-assembler-passes.cpp --> contains the code for PASS 1 & 2 and data structures and functions used
+input.txt --> The code for assembly is to be written into this file
+organising.txt --> contains assembly program in an organising way
+Intermediatefile.txt --> contains instructions and it’s address assigned after PASS 1
+errors.txt --> contains errors in PASS 1 &2 if any
+tables.txt --> contains symbol tables and literal tables
+listingfile.txt --> contains assembled instructions
+objectcode.txt --> contains object program
+
+### Input example (input.txt):
+![Screenshot from 2024-05-06 10-48-42](https://github.com/rljsai/SIC-XC-Assembler/assets/146453283/95b9224e-5c58-4c44-9563-f89a75ff3d54)
+
+### Organizing.txt:
+![Screenshot from 2024-05-06 10-50-12](https://github.com/rljsai/SIC-XC-Assembler/assets/146453283/cd999051-13bb-46c2-9bce-4d60fe536631)
+
+### intermediatefile.txt:
+![image](https://github.com/rljsai/SIC-XC-Assembler/assets/146453283/be91ca82-8bb2-43b9-b6d8-7a532e931df9)
+
+### Listingfile.txt:
+![image](https://github.com/rljsai/SIC-XC-Assembler/assets/146453283/06767521-b6e5-4675-9be7-813566f86f7c)
+
+### errors.txt:
+![Screenshot from 2024-05-06 10-53-59](https://github.com/rljsai/SIC-XC-Assembler/assets/146453283/534f85ff-be19-4bf2-8e08-f02d1476b09c)
+
+### tables.txt:
+![image](https://github.com/rljsai/SIC-XC-Assembler/assets/146453283/f6d0e171-9538-4b1a-b2b7-7680365b2ce9)
+
+### objectcode.txt:
+![image](https://github.com/rljsai/SIC-XC-Assembler/assets/146453283/ca19a013-3ed6-4442-ace3-cacb039c0b58)
+
+
+
+
+
+
 
 
